@@ -1,13 +1,14 @@
 const mix = require('laravel-mix');
 const path = require('path');
+require('dotenv').config()
 
 require('laravel-mix-purgecss');
 const webpack = require('./webpack.config.js');
 
 
-mix.js('src/main.js', '../../../public/legacy/js/vue2.js')
+mix.js('src/main.js', path.join(process.env.MIX_BUILD_OUTDIR, 'vue2.js'))
     .vue({ version: 2 })
-    .setPublicPath('../../../public')
+    .setPublicPath(process.env.MIX_PUBLIC_PATH)
     .webpackConfig(Object.assign(webpack))
     // .options({
     //     postCss: [require('autoprefixer')],
