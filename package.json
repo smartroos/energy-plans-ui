@@ -1,0 +1,29 @@
+{
+    "name": "vue2-project",
+    "version": "1.0.0",
+    "description": "A Vue 2 project",
+    "scripts": {
+        "dev": "cross-env NODE_ENV=development mix",
+        "watch": "cross-env NODE_ENV=development mix watch",
+        "production": "cross-env NODE_ENV=production mix"
+    },
+    "dependencies": {
+        "axios": "^0.24.0",
+        "lodash": "^4.17.21",
+        "vue": "^2.6.14",
+        "vue-router": "^3.5.3",
+        "vuetify": "2.6.10",
+        "vuex": "^3.6.2"
+    },
+    "devDependencies": {
+        "cross-env": "^7.0.3",
+        "laravel-mix": "^6.0.39",
+        "laravel-mix-purgecss": "^6.0.0",
+        "sass": "^1.23.7",
+        "sass-loader": "^8.0.0",
+        "vue-loader": "^15.11.1",
+        "vue-template-compiler": "^2.6.14",
+        "vuetify-loader": "^1.9.2",
+        "webpack-bundle-analyzer": "^4.10.1"
+    }
+}
