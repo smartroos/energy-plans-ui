@@ -17,14 +17,14 @@ export default {
 
 <template>
     <v-app>
-        <v-container class="pa-0 ">
+<!--        <v-container class="pa-0 ">-->
             <EaPlanContainer
                 :postcode="postcode"
                 :state="state"
                 :plan="plan"
                 :services="services"
             ></EaPlanContainer>
-        </v-container>
+<!--        </v-container>-->
     </v-app>
 </template>
 

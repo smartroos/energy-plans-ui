@@ -78,7 +78,7 @@ export default {
 
 <template>
     <v-row no-gutters>
-        <v-col cols="12" sm="6"  class="mx-auto  outlined">
+<!--        <v-col cols="12" sm="6"  class="mx-auto  outlined">-->
             <header class="header-area py-4 px-3 rounded-t">
                 <h2 class="display-1">{{ planDetails.name }}</h2>
                 <p class="subtitle-1">{{ planText }}</p>
@@ -424,7 +424,7 @@ export default {
                 <!--                        </v-btn>-->
 
             </div>
-        </v-col>
+<!--        </v-col>-->
     </v-row>
 </template>
 
