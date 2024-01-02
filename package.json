@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "A Vue 2 project",
     "scripts": {
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
         "dev": "cross-env NODE_ENV=development mix",
         "watch": "cross-env NODE_ENV=development mix watch",
         "production": "cross-env NODE_ENV=production mix"

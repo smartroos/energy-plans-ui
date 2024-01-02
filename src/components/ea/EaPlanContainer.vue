@@ -73,15 +73,14 @@ export default {
 
 
 <template>
-    <v-container class="pa-0 " v-if="loaded">
         <EAPlanDetails
+            v-if="loaded"
             :planDetails="planDetails"
             :postcode="postcode"
             :state="state"
             :plan="plan"
             :services="services"
         ></EAPlanDetails>
-    </v-container>
 </template>
 
 

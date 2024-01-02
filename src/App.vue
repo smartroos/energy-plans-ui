@@ -17,7 +17,7 @@ export default {
 
 <template>
     <v-app>
-        <v-container>
+        <v-container class="pa-0 ">
             <EaPlanContainer
                 :postcode="postcode"
                 :state="state"

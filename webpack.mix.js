@@ -8,6 +8,7 @@ const webpack = require('./webpack.config.js');
 
 mix.js('src/main.js', path.join(process.env.MIX_BUILD_OUTDIR, 'vue2.js'))
     .vue({ version: 2 })
+    .sourceMaps(false)
     .setPublicPath(process.env.MIX_PUBLIC_PATH)
     .webpackConfig(Object.assign(webpack))
     // .options({
