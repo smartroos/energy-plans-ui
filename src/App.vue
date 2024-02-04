@@ -6,10 +6,22 @@ export default {
     components: { EaPlanContainer },
     data() {
         return {
-            postcode: 3044,
-            state: "VIC",
-            plan: 'balance_plan',
-            services: ['gas', 'power']
+            postcode: null,
+            state: null,
+            plan: null,
+            services: [],
+        }
+    },
+    created() {
+        this.initData();
+    },
+    methods: {
+        initData() {
+            const queryParams = new URLSearchParams(window.location.search);
+            this.postcode = queryParams.get("postcode");
+            this.state = queryParams.get("state");
+            this.plan = queryParams.get("plan_type");
+            this.services = queryParams.get("service_type");
         }
     }
 }
